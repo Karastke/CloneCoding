@@ -1,0 +1,13 @@
+const myObject = {
+  name: 'myObject',
+  showName: function() {
+    console.log(this.name);
+  }
+};
+const anotherObject = {
+  name: 'anotherObject'
+};
+anotherObject.showName = myObject.showName;
+
+myObject.showName();
+anotherObject.showName();

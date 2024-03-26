@@ -1,0 +1,9 @@
+function greet() {
+  console.log(`Hello, I am ${this.name}!`);
+}
+
+const person = {
+  name: 'Emily'
+};
+
+greet.call(person);

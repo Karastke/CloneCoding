@@ -1,0 +1,6 @@
+function Person(name) {
+  this.name = name;
+}
+
+const jack = new Person('Jack');
+console.log(jack.name);
