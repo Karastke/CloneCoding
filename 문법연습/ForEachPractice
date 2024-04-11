@@ -1,0 +1,21 @@
+// const scores = [82, 75, 48, 64, 36];
+// sum = 0;
+// scores.forEach(function(score) {
+//     sum += score;
+// })
+// let mean = sum / scores.length;
+// console.log(mean);
+
+const people = [
+    {name : 'John' , age : 19},
+    {name: 'Jane' , age : 22},
+    {name: 'Peter' , age: 17},
+    {name: 'Mark' , age: 25},
+    {name: 'Maria', age: 20},
+];
+
+people.forEach(person => {
+    if (person.age >= 20) {
+        console.log(person.name);
+    }
+})
