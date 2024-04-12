@@ -82,4 +82,20 @@ ul li a{
   overflow : hidden;
 }
 
-
+ul li a:hover{
+  transform: translateY(-20px);
+}
+ul li a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background: rgba(255,255,255,0.5);
+  transform: skewX(45deg) translateX(150px);
+  transition: 0.5s;
+}
+ul li a:hover::before{
+  transform: skewX(45deg) translateX(-150px);
+}
